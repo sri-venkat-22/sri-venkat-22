@@ -1,8 +1,8 @@
-name: Generate contribution snake
+name: Generate profile graphics
 
 on:
   schedule:
-    - cron: "0 */12 * * *"
+    - cron: "0 */6 * * *"
   workflow_dispatch:
   push:
     branches: [main]
@@ -11,16 +11,30 @@ permissions:
   contents: write
 
 jobs:
-  snake:
+  build:
     runs-on: ubuntu-latest
     timeout-minutes: 5
     steps:
+      - uses: actions/checkout@v4
+
       - uses: Platane/snk@v3
         with:
           github_user_name: ${{ github.repository_owner }}
           outputs: |
             dist/snake-dark.svg?color_snake=#ffffff&color_dots=#161b22,#3a3a3a,#6e6e6e,#a8a8a8,#ffffff
             dist/snake-light.svg?color_snake=#000000&color_dots=#ebedf0,#c6c6c6,#8c8c8c,#4d4d4d,#000000
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Render activity graph
+        run: python scripts/activity_graph.py
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          USERNAME: ${{ github.repository_owner }}
+          DISPLAY_NAME: Sri Venkat
+          OUT: dist/activity-graph.svg
 
       - uses: crazy-max/ghaction-github-pages@v4
         with:
