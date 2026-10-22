@@ -88,7 +88,7 @@ Hello there! I'm ***Sri Venkat Reddy***, a final-year Computer Science student w
 </p>
 
 <p align="center">
-  <img width="100%" src="https://github-readme-activity-graph.vercel.app/graph?username=sri-venkat-22&bg_color=000000&color=FFFFFF&line=FFFFFF&point=FFFFFF&area=true&area_color=8B949E&title_color=FFFFFF&border_color=30363D&custom_title=Sri%20Venkat%27s%20Contribution%20Graph" alt="Contribution graph" />
+  <img width="100%" src="https://raw.githubusercontent.com/sri-venkat-22/sri-venkat-22/output/activity-graph.svg" alt="Contribution graph" />
 </p>
 
 <p align="center">
