@@ -24,6 +24,9 @@ jobs:
             dist/snake-dark.svg?color_snake=#ffffff&color_dots=#161b22,#3a3a3a,#6e6e6e,#a8a8a8,#ffffff
             dist/snake-light.svg?color_snake=#000000&color_dots=#ebedf0,#c6c6c6,#8c8c8c,#4d4d4d,#000000
 
+      - name: Fix dist ownership (snk runs as root in Docker)
+        run: sudo chown -R "$(id -u):$(id -g)" dist
+
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
