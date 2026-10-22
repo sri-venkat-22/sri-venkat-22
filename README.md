@@ -29,7 +29,7 @@ Hello there! I'm ***Sri Venkat Reddy***, a final-year Computer Science student w
 <p align="center">
   🏛️ <b><i>B.Tech CSE @ GRIET, Hyderabad (2023–27)</i></b><br/>
   🤖 <b><i>Building Loom — an agentic AI pair-programmer for the terminal</i></b><br/>
-  🛰️ <b><i>Building Prism Earth — geospatial intelligence for India</i></b><br/>
+  🛰️ <b><i>Building Terra — citation-backed geospatial intelligence for India</i></b><br/>
   🌱 <b><i>Contributing to open-source AI / ML</i></b><br/>
   📫 <b><i>srivenkatreddy2208@gmail.com</i></b>
 </p>
@@ -43,9 +43,10 @@ Hello there! I'm ***Sri Venkat Reddy***, a final-year Computer Science student w
 
 | Project | What it is | Stack |
 |:--|:--|:--|
-| **Loom** | Agentic AI pair-programming CLI — orchestrator agent over MCP, persistent vector + relational memory, provider-agnostic LLMs | `Python` `LangGraph` `MCP` `pgvector` |
-| [**Prism Earth**](https://github.com/sri-venkat-22/Prism-Earth) | Geospatial intelligence platform for India — Planner → Fetch → Synthesizer over ISRO Bhuvan & Sentinel-2 | `FastAPI` `PostgreSQL` `Redis` `React` |
-| [**AEGIS Twin**](https://github.com/sri-venkat-22/Logistics-Simulation) | Logistics digital-twin dashboard with simulation engines | `Python` `React` |
+| [**Loom**](https://github.com/sri-venkat-22/loom) | Agentic AI pair-programming CLI — orchestrator agent over MCP, persistent vector + relational memory, provider-agnostic LLMs | `Python` `LangGraph` `MCP` `pgvector` |
+| [**Terra**](https://github.com/sri-venkat-22/Terra) | Geospatial intelligence for India — turns a coordinate into source-cited data and AI answers that never fabricate values | `FastAPI` `PostGIS` `Redis` `Next.js` |
+| [**AEGIS Twin**](https://github.com/sri-venkat-22/Logistics-Simulation) | Two-scale digital twin of an Indian logistics network — SimPy macro twin, SUMO street-level twin of Hyderabad, Monte Carlo what-ifs | `SimPy` `SUMO` `Python` |
+| [**IndusAI**](https://github.com/sri-venkat-22/Indus-AI) | Air-gapped agentic workbench — local RAG with citations, on-device OCR, sandboxed agent, real Office deliverables | `Ollama` `FastAPI` `React` |
 
 </div>
 
